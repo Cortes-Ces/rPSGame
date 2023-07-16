@@ -30,13 +30,13 @@ function singleRound(playerSelection, computerSelection) {
 }
 
 // Comp and player choices
-const player = "rock";
+let player = prompt("Please choose Rock, Paper, or Scissors");
 const computer = getComputerChoice();
 
 // Works but will fix later using for loop
  function game() {
     // If round is less than 5 repeat NOT DONE YET
-    for (let i = 1; i < 7; i++) { 
+    for (let i = 1; i <= 6; i++) { 
         Math.random(singleRound(player, computer));
         console.log("Round: " + i)
       }
@@ -44,7 +44,3 @@ const computer = getComputerChoice();
     }; 
 //console.log(game());
 game();
-// game();
-// game();
-// game();
-// game();
